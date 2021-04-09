@@ -1,4 +1,4 @@
-Package: paramonteR
+Package: paramonte
 Type: Package
 Title: The Parallel Monte Carlo Library for monte carlo simulations
 Version: 0.1.0

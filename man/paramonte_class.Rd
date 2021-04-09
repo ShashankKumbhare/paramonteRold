@@ -11,8 +11,6 @@ This function returns a \code{\link{R6}} \code{paramonte_class} object.
 It can then be used to instantiate ParaMonte samplers object.
 }
 \examples{
-pm = paramonte()
-# or
 pm = paramonte_class$new()
 
 ## ------------------------------------------------

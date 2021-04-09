@@ -6,8 +6,6 @@
 #'     It can then be used to instantiate ParaMonte samplers object.
 #' @return This function returns a \code{\link{R6}} ```paramonte_class``` object.
 #' @examples
-#' pm = paramonte()
-#' # or
 #' pm = paramonte_class$new()
 #' @import ggplot2
 #' @export

@@ -8,8 +8,8 @@ printBanner = function() {
     paramonteBanner = readLines(bannerPath)
     writeLines(paramonteBanner)
 
-    pm = paramonte_class$new()
-    assign( "pm", pm, envir = globalenv() )
+    # pm = paramonte_class$new()
+    # assign( "pm", pm, envir = globalenv() )
 
 }
 # <<
