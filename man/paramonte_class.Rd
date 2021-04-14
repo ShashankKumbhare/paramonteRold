@@ -2,12 +2,12 @@
 % Please edit documentation in R/paramonte_class.R
 \name{paramonte_class}
 \alias{paramonte_class}
-\title{Instantiate a \code{\link{R6}} ParaMonte object for \code{\link{paramonteR}} package}
+\title{Instantiate a \code{\link{R6}} ParaMonte object for \code{\link{paramonte}} package}
 \value{
 This function returns a \code{\link{R6}} \code{paramonte_class} object.
 }
 \description{
-\code{paramonte_class$new()} or \code{ paramonte()} initializes a ParaMonte object.\cr
+\code{paramonte_class$new()} initializes a ParaMonte object.\cr
 It can then be used to instantiate ParaMonte samplers object.
 }
 \examples{
@@ -24,16 +24,17 @@ pm = paramonte()
 ## Method `paramonte_class$print`
 ## ------------------------------------------------
 
-pm = paramonte()
-pm
-pm = paramonte()
+pm = paramonte_class$new()
 pm$print()
+# or
+pm = paramonte_class$new()
+pm
 
 ## ------------------------------------------------
 ## Method `paramonte_class$ParaDRAM`
 ## ------------------------------------------------
 
-pm   = paramonte()
+pm   = paramonte_class$new()
 pmpd = pm$ParaDRAM()
 }
 \section{Methods}{
@@ -82,14 +83,15 @@ Prints \code{\link{paramonte_class}} object usage.
 
 \subsection{Examples}{
 \if{html}{\out{<div class="r example copy">}}
-\preformatted{pm = paramonte()
-pm
+\preformatted{pm = paramonte_class$new()
+pm$print()
+# or
 }
 \if{html}{\out{</div>}}
 
 \if{html}{\out{<div class="r example copy">}}
-\preformatted{pm = paramonte()
-pm$print()
+\preformatted{pm = paramonte_class$new()
+pm
 }
 \if{html}{\out{</div>}}
 
@@ -100,7 +102,8 @@ pm$print()
 \if{html}{\out{<a id="method-ParaDRAM"></a>}}
 \if{latex}{\out{\hypertarget{method-ParaDRAM}{}}}
 \subsection{Method \code{ParaDRAM()}}{
-This method initializes a ParaDRAM sampler object. It can then be used to call ParaDRAM routines.
+This method initializes a ParaDRAM sampler object.
+It can then be used to call ParaDRAM routines.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{paramonte_class$ParaDRAM()}\if{html}{\out{</div>}}
 }
@@ -110,7 +113,7 @@ This function returns a \code{\link{R6}} \code{ParaDRAM} object.
 }
 \subsection{Examples}{
 \if{html}{\out{<div class="r example copy">}}
-\preformatted{pm   = paramonte()
+\preformatted{pm   = paramonte_class$new()
 pmpd = pm$ParaDRAM()
 }
 \if{html}{\out{</div>}}

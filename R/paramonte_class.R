@@ -1,8 +1,8 @@
 
 ####################################################################################################################################
 ####################################################################################################################################
-#' @title Instantiate a \code{\link{R6}} ParaMonte object for \code{\link{paramonteR}} package
-#' @description ```paramonte_class$new()``` or ``` paramonte()``` initializes a ParaMonte object.\cr
+#' @title Instantiate a \code{\link{R6}} ParaMonte object for \code{\link{paramonte}} package
+#' @description ```paramonte_class$new()``` initializes a ParaMonte object.\cr
 #'     It can then be used to instantiate ParaMonte samplers object.
 #' @return This function returns a \code{\link{R6}} ```paramonte_class``` object.
 #' @examples
@@ -60,7 +60,6 @@ paramonte_class <- R6::R6Class( "paramonte",
                                 #' @description Instantiates a \code{\link{paramonte_class}} object.
                                 #' @return Returns a new \code{\link{paramonte_class}} object.
                                 #' @examples pm = paramonte_class$new()
-                                #' @examples pm = paramonte()
                                 initialize = function( ) {
 
                                     private$Err        = Err_class$new()
@@ -78,11 +77,12 @@ paramonte_class <- R6::R6Class( "paramonte",
                                 # print >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                                 #' @description Prints \code{\link{paramonte_class}} object usage.
                                 #' @examples
-                                #' pm = paramonte()
-                                #' pm
-                                #' @examples
-                                #' pm = paramonte()
+                                #' pm = paramonte_class$new()
                                 #' pm$print()
+                                #' # or
+                                #' @examples
+                                #' pm = paramonte_class$new()
+                                #' pm
                                 print = function( ) {
 
                                     tab             = private$Err$tab
@@ -95,10 +95,11 @@ paramonte_class <- R6::R6Class( "paramonte",
                                 },
 
                                 # ParaDRAM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                #' @description This method initializes a ParaDRAM sampler object. It can then be used to call ParaDRAM routines.
+                                #' @description This method initializes a ParaDRAM sampler object.
+                                #'     It can then be used to call ParaDRAM routines.
                                 #' @return This function returns a \code{\link{R6}} ```ParaDRAM``` object.
                                 #' @examples
-                                #' pm   = paramonte()
+                                #' pm   = paramonte_class$new()
                                 #' pmpd = pm$ParaDRAM()
                                 ParaDRAM = function() {
 
