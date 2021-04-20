@@ -2,14 +2,34 @@
 % Please edit documentation in R/paramonte_class.R
 \name{paramonte_class}
 \alias{paramonte_class}
-\title{Instantiate a \code{\link{R6}} \strong{\code{paramonte_class}} object for \strong{\link{paramonte}} package usage}
+\title{Instantiate a \code{\link{R6}} \strong{\code{paramonte_class}} object for \link[=**paramonte**]{\strong{paramonte}} package usage}
 \value{
 The class generator returns a \code{\link{R6}} \code{paramonte_class} object.
 }
 \description{
 \code{paramonte_class$new()} initializes a \code{paramonte_class} object.\cr
-It can then be used to instantiate \code{\link{ParaDRAM}} samplers object.
+It can then be used to instantiate \code{\link{ParaDRAM}} samplers object.\cr
+\itemize{
+\item This is the first list item.
+\item Here's the second list item.
+
+I need to add another paragraph below the second list item.
+\item And here's the third list item.
 }
+}
+\section{Heading 1}{
+this is under heading 1
+\subsection{Heading 2}{
+
+this is under heading 2
+\subsection{Heading 3}{
+
+this is under heading 3
+}
+
+}
+}
+
 \examples{
 
 ## ------------------------------------------------

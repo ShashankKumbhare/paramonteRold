@@ -112,6 +112,10 @@
     simulation attribute to None or re-instantiate the sampler.
     \cr.
 }
+\details{
+The only function you're likely to need from roxygen2 is \code{\link[=roxygenize]{roxygenize()}}.
+Otherwise refer to the vignettes to see how to format the documentation.
+}
 \author{
 \strong{Maintainer}: Shashank Kumbhare \email{shashank.kumbhare@mavs.uta.edu}
 
